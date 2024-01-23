@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
             val num2:EditText= findViewById(R.id.editTextText2)
         val btnSumar:Button= findViewById(R.id.button4)
         val btnRestar:Button = findViewById(R.id.button)
+        val btnMultiplicar:Button = findViewById(R.id.button2)
         val txtRest:TextView= findViewById(R.id.textView)
 
         btnSumar.setOnClickListener{
@@ -35,4 +36,12 @@ class MainActivity : AppCompatActivity() {
             txtRest.text = resta.toString()
 
     }
+        btnMultiplicar.setOnClickListener{
+
+            val nummero1 = num1.text.toString().toInt()
+            val numero2 = num2.text.toString().toInt()
+            val multiplicacion = nummero1 * numero2
+            txtRest.text = multiplicacion.toString()
+
+        }
 }}
